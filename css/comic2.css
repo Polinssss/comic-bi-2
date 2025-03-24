@@ -23,7 +23,7 @@
 .comic__img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .cloud-img {
@@ -182,6 +182,8 @@
     }
 }
 
+.cloud1,
+.cloud2,
 .cloud3,
 .cloud4,
 .cloud5,
@@ -199,7 +201,14 @@
     animation: fadeIn 2s ease-in-out;
 }
 
+.comic__img{
+    object-fit: contain;
+}
+
 @media (min-width: 576px) {
+    .comic__img{
+        object-fit: contain;
+    }
     .comic__item3 .cloud4{
         left: 170px;
         transform: scaleX(-1) scaleY(-1);
@@ -239,7 +248,7 @@
         left: 60px;
         transform: scaleX(-1) scaleY(-1);
     }
-    }
+    
     .comic__item8 .cloud1{
         left: 5px;
         transform: scaleX(-1) scaleY(-1);
@@ -256,10 +265,36 @@
         
 
     }
+}
 
-  
-  
+@media(max-width:600px) {
+    /* .comic__item5 .cloud1 {
+        width: 200px;
+        top: 100px;
+        left: 0;
+
+    } */
+
+    /* .comic__item5 .cloud-img1 {
+        transform: scaleX(-1) scaleY(-1);
+    } */
+
+    .comic__item5 .cloud2 {
+        position: absolute;
+        width: 200px;
+        right: 50px;
+        bottom: 50px;
+    }
+
+    .comic__item5 .cloud-img2 {
+        transform: rotate(180deg);
+    }
+}
+
 @media (min-width: 768px) {
+    .comic__img{
+        object-fit: cover;
+    }
     .comic__item3 .cloud4{
         left: 350px;
 
@@ -288,9 +323,17 @@
         left: 370px;
     }
   }
-  
-  
+
+  @media(max-width:900px) {
+    .comic__item {
+        width: 100%;
+    }
+}
+
 @media (min-width: 992px) {
+    .comic__img{
+        object-fit: cover;
+    }
     .comic__item3 .cloud4{
         left: 120px;
     }
@@ -319,9 +362,13 @@
     }
     
   }
-  
-  
-@media (min-width: 1200px) {
+
+  @media (min-width: 1200px) {
+    .comic__img{
+        /* width: 500px; */
+        object-fit: cover;
+    }
+
     .comic__item3 .cloud4{
         left: 180px;
     }
@@ -350,9 +397,12 @@
     }
    
   }
-  
-  
+
+
 @media (min-width: 1400px) {
+    .comic__img{
+        object-fit: cover;
+    }
     .comic__item6 .cloud7{
         left: 250px;
         transform: scaleX(-1) scaleY(-1);
@@ -364,33 +414,3 @@
     }
     
   }
-
-@media(max-width:900px) {
-    .comic__item {
-        width: 100%;
-    }
-}
-
-@media(max-width:600px) {
-    .comic__item5 .cloud1 {
-        width: 200px;
-        top: 100px;
-        left: 0;
-
-    }
-
-    .comic__item5 .cloud-img1 {
-        transform: scaleX(-1) scaleY(-1);
-    }
-
-    .comic__item5 .cloud2 {
-        position: absolute;
-        width: 200px;
-        right: 50px;
-        bottom: 50px;
-    }
-
-    .comic__item5 .cloud-img2 {
-        transform: rotate(180deg);
-    }
-}
