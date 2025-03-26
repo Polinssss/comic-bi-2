@@ -5,6 +5,9 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+
+
 .comic-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +16,8 @@
 
 }
 
+
+
 .comic__item {
     width: 50%;
     height: 300px;
@@ -20,30 +25,46 @@
     position: relative;
 }
 
+
+
 .comic__img {
     height: 100%;
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
+
+
 
 .cloud-img {
     width: 100%;
 }
 
+
+
 .comic__item1 .comic__img {
     filter: grayscale(100%);
 }
 
+
+
 .comic__item2 .comic__img {
     filter: hue-rotate(30deg);
 }
+
+
+
 .comic__item3 .comic__img {
     filter: brightness(150%);
 }
 
+
+
+
 .comic__item4 .comic__img {
     filter: brightness(50%);
 }
+
+
 
 .comic__item8 .cloud1 {
     position: absolute;
@@ -52,9 +73,13 @@
     left: 0;
 }
 
+
+
 .comic__item8 .cloud-img1 {
     transform: scaleX(-1);
 }
+
+
 
 .comic__item8 .cloud2 {
     position: absolute;
@@ -64,6 +89,8 @@
 
 }
 
+
+
 .comic__item8 .text1 {
     position: absolute;
     top: 89px;
@@ -71,6 +98,8 @@
     font-size: 15px;
 
 }
+
+
 
 .comic__item8 .text2 {
     position: absolute;
@@ -80,6 +109,9 @@
     word-break: normal;
 
 }
+
+
+
 .comic__item2 .cloud3{
     position: absolute;
     top:30px;
@@ -155,7 +187,6 @@
     padding-left: 20px;
     padding-right: 20px;
     background: url(../img/comic2/old-newspaper-background_705652-166.avif);
-    /* background-size: cover; */
     
 }
 
@@ -201,11 +232,165 @@
     animation: fadeIn 2s ease-in-out;
 }
 
-.comic__img{
-    object-fit: contain;
+
+@media (max-width: 1400px) {
+    .comic__img{
+        object-fit: cover;
+    }
+
+    .comic__item6 .cloud6{
+        left: 30px;
+    }
+
+    .comic__item6 .text6{
+        bottom: 140px;
+        left: 75px;
+    }
+
+    .comic__item6 .cloud7{
+        left: 250px;
+        transform: scaleX(-1) scaleY(-1);
+    }
+    .comic__item6 .text7{
+        bottom: 160px;
+        left: 60px;
+        transform: scaleX(-1) scaleY(-1);
+    }
+    
 }
 
-@media (min-width: 576px) {
+@media (max-width: 1200px) {
+    .comic__img{
+        object-fit: cover;
+    }
+    
+    .comic__item8 .cloud1{
+        left: -30px;
+    }
+
+    .comic__item8 .cloud2{
+        left: 230px;
+    }
+
+    .comic__item6 .cloud6{
+        left: 30px;
+    }
+
+    .comic__item6 .text6{
+        bottom: 140px;
+        left: 75px;
+    }
+
+    .comic__item6 .cloud7{
+        left: 230px;
+        transform: scaleX(-1) scaleY(-1);
+    }
+
+    .comic__item6 .text7{
+        bottom: 160px;
+        left: 60px;
+        transform: scaleX(-1) scaleY(-1);
+    }
+   
+}
+
+@media (max-width: 1000px) {
+    .comic__img{
+        object-fit: cover;
+    }
+
+    .comic__item8 .cloud1{
+        left: -70px;
+    }
+    .comic__item8 .cloud2{
+        left: 230px;
+    }
+
+    .comic__item6 .cloud6{
+        left: -10px;
+    }
+
+    .comic__item6 .text6{
+        bottom: 140px;
+        left: 75px;
+    }
+
+    .comic__item6 .cloud7{
+        left: 250px;
+    }
+
+    .comic__item6 .text7{
+        bottom: 160px;
+        left: 60px;
+        transform: scaleX(-1) scaleY(-1);
+    }
+
+}
+
+@media(max-width: 900px) {
+    .comic__item {
+        width: 100%;
+    }
+    .comic__img{
+        object-fit: cover;
+    }
+
+    .comic__item8 .cloud1{
+        left: 50px;
+    }
+    .comic__item8 .cloud2{
+        left: 430px;
+    }
+
+    .comic__item6 .cloud6{
+        left: 30px;
+    }
+
+    .comic__item6 .text6{
+        bottom: 140px;
+        left: 75px;
+    }
+
+    .comic__item6 .cloud7{
+        left: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comic__img{
+        object-fit: cover;
+    }
+    .comic__item8 .cloud1{
+        left: -40px;
+    }
+    .comic__item8 .cloud2{
+        left: 300px;
+    }   
+
+    .comic__item6 .cloud6{
+        left: -20px;
+    }
+
+    .comic__item6 .text6{
+        bottom: 140px;
+        left: 75px;
+    }
+
+    .comic__item6 .cloud7{
+        left: 270px;
+        transform: scaleX(-1) scaleY(-1);
+    }
+    .comic__item6 .text7{
+        bottom: 160px;
+        left: 55px;
+        transform: scaleX(-1) scaleY(-1);
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
     .comic__img{
         object-fit: contain;
     }
@@ -213,8 +398,6 @@
         left: 170px;
         transform: scaleX(-1) scaleY(-1);
         bottom: -60px; 
-
-
     }
     .comic__item3 .text4 {
         transform: scaleX(-1) scaleY(-1);
@@ -229,15 +412,16 @@
         transform: scaleX(-1) scaleY(-1);
         bottom: 210px; 
     }
+
     .comic__item6 .cloud6{
-        left: 5px;
+        left: 60px;
         transform: scaleX(-1) scaleY(-1);
-        bottom: -50px; 
+        bottom: -20px; 
 
     }
     .comic__item6 .text6{
         transform: scaleX(-1) scaleY(-1);
-        bottom: 200px; 
+        bottom: 170px; 
     }
     .comic__item6 .cloud7{
         left: 200px;
@@ -250,167 +434,104 @@
     }
     
     .comic__item8 .cloud1{
-        left: 5px;
+        left: 80px;
         transform: scaleX(-1) scaleY(-1);
-        bottom: -40px; 
-        
-
+        bottom: 30px; 
     }
+
     .comic__item8 .text1{
         transform: scaleX(-1) scaleY(-1);
-        bottom: 265px; 
+        bottom: 190px; 
     }
+
     .comic__item8 .cloud2{
-        left: 235px;
-        
-
-    }
-}
-
-@media(max-width:600px) {
-    /* .comic__item5 .cloud1 {
-        width: 200px;
-        top: 100px;
-        left: 0;
-
-    } */
-
-    /* .comic__item5 .cloud-img1 {
-        transform: scaleX(-1) scaleY(-1);
-    } */
-
-    .comic__item5 .cloud2 {
-        position: absolute;
-        width: 200px;
-        right: 50px;
-        bottom: 50px;
-    }
-
-    .comic__item5 .cloud-img2 {
-        transform: rotate(180deg);
-    }
-}
-
-@media (min-width: 768px) {
-    .comic__img{
-        object-fit: cover;
-    }
-    .comic__item3 .cloud4{
-        left: 350px;
-
-    }
-    .comic__item4 .cloud5{
-        left: 350px;
-    }
-    .comic__item6 .cloud6{
-        left: 50px;
-
-    }
-    .comic__item6 .cloud7{
-        left: 370px;
-        transform: scaleX(-1) scaleY(-1);
-    }
-    .comic__item6 .text7{
-        bottom: 160px;
-        left: 65px;
-        transform: scaleX(-1) scaleY(-1);
-    }
-    
-    .comic__item8 .cloud1{
-        left: 50px;
-    }
-    .comic__item8 .cloud2{
-        left: 370px;
-    }
-  }
-
-  @media(max-width:900px) {
-    .comic__item {
-        width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    .comic__img{
-        object-fit: cover;
-    }
-    .comic__item3 .cloud4{
-        left: 120px;
-    }
-    .comic__item4 .cloud5{
-        left: 210px;
-    }
-    .comic__item6 .cloud6{
-        left: 30px;
-    }
-    .comic__item6 .cloud7{
         left: 200px;
+    }
+}
+
+@media(max-width: 450px){ 
+    .comic__img{
+        object-fit: contain;
+    }
+
+    .comic__item8 .cloud1{
+        left: 10px;
+        transform: scaleX(-1) scaleY(-1);
+        bottom: 30px; 
+    }
+
+    .comic__item8 .text1{
+        transform: scaleX(-1) scaleY(-1);
+        bottom: 190px; 
+    }
+
+    .comic__item8 .cloud2{
+        left: 150px;
+    }
+
+    .comic__item6 .cloud6{
+        left: -10px;
+        transform: scaleX(-1) scaleY(-1);
+        bottom: -20px; 
+
+    }
+    .comic__item6 .text6{
+        transform: scaleX(-1) scaleY(-1);
+        bottom: 170px; 
+    }
+    .comic__item6 .cloud7{
+        left: 150px;
         transform: scaleX(-1) scaleY(-1);
     }
     .comic__item6 .text7{
         bottom: 160px;
         left: 60px;
         transform: scaleX(-1) scaleY(-1);
-    }
-
-
-    .comic__item8 .cloud1{
-        left: 50px;
-    }
-    .comic__item8 .cloud2{
-        left: 230px;
-    }
-    
-  }
-
-  @media (min-width: 1200px) {
-    .comic__img{
-        /* width: 500px; */
-        object-fit: cover;
     }
 
     .comic__item3 .cloud4{
-        left: 180px;
+        left: 70px;
+        bottom: -60px; 
+    }
+    .comic__item3 .text4 {
+        bottom: 210px; 
     }
     .comic__item4 .cloud5{
-        left: 250px;
+        left: 90px;
+        bottom: -50px; 
     }
-    .comic__item6 .cloud6{
-        left: 30px;
-    }
-    .comic__item6 .cloud7{
-        left: 230px;
-        transform: scaleX(-1) scaleY(-1);
-    }
-    .comic__item6 .text7{
-        bottom: 160px;
-        left: 60px;
-        transform: scaleX(-1) scaleY(-1);
+    .comic__item4 .text5 {
+        bottom: 210px; 
     }
 
-
-    .comic__item8 .cloud1{
-        left: 50px;
-    }
-    .comic__item8 .cloud2{
-        left: 290px;
-    }
-   
-  }
+}
 
 
-@media (min-width: 1400px) {
-    .comic__img{
-        object-fit: cover;
-    }
-    .comic__item6 .cloud7{
-        left: 250px;
-        transform: scaleX(-1) scaleY(-1);
-    }
-    .comic__item6 .text7{
-        bottom: 160px;
-        left: 60px;
-        transform: scaleX(-1) scaleY(-1);
-    }
-    
-  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
